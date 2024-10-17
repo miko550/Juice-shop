@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+                
+    juice-shop:
+        container_name: "juice-shop"
+        image: bkimminich/juice-shop
+        restart: unless-stopped
+        ports:
+            - "3000:3000"
+        environment:
+            - CTF_KEY=tIQwHN1IFKCTau3YL24D5WDm8leDu1js
+            - NODE_ENV=ctf
